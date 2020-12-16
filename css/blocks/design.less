@@ -1,0 +1,37 @@
+// main: ../style.less
+
+
+.design{
+	display: flex;
+	flex-flow: row wrap;
+	padding: 90px 120px;
+}
+.design_item{
+	width: 25%;
+	height: auto;
+	text-align: center;
+	padding: 45px 66px;
+}
+.design_item-h3{
+	color: #191919;
+	font-family: 'Montserrat', sans-serif;
+}
+.design_item-p{
+	margin-top: 13px;
+	color: #787878;
+	line-height: 24px;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+
+@media screen and (max-width:  1200px){
+	.design_item{
+	width: 50%;
+	}
+}
+@media screen and (max-width:  700px){
+	.design_item{
+	width: 100%;
+	padding: 25px 66px;
+	}
+}

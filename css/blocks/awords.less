@@ -1,0 +1,54 @@
+// main: ../style.less
+
+
+.awords{
+	background-color: #10C9C3;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-between;
+	padding: 100px 0;
+	margin: 0 auto;
+}
+.awords_item{
+	width: 20%;
+	margin: 0 10px;
+	text-align: center;
+}
+.awords_item i{
+	font-size: 48px;
+	color: #fff;
+	margin-right: 20px;
+}
+.awords_item-text{
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+}
+.awords_item-text p{
+	margin: 5px 0;
+}
+
+
+@media screen and (max-width:  1200px){
+	.awords{
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+		padding: 20px;
+	}
+	.awords_item{
+	width: 20%;
+	}
+	
+}
+@media screen and (max-width:  780px){
+	.awords{
+		padding: 20px;
+	}
+	.awords_item{
+	width: 20%;
+		flex: 0 1 auto;
+	}
+}

@@ -1,0 +1,50 @@
+// main: ../style.less
+
+
+.products{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.products_item{
+	width: 25%;
+	height: 300px;
+	overflow: hidden;
+	border: 1px solid #fff;
+	background-color: #10C9C3;
+	transition: box-shadow 1s, background-color 0.3s ;
+	
+	&:hover{
+		box-shadow: 0px 10px 15px red;
+		background-color: darken(#10C9C3, 30%);
+		z-index: 5;
+	}
+//	&:hover .products_item-eye{
+//		color: #fff;
+//	}
+}
+.products_item-eye{
+//	z-index: 6;
+//	padding-left: 45%;
+//	padding-top: 23%;
+	color: transparent;
+//	font-size: 40px;
+//	transition: color 1s;
+}
+.products_more{
+	background-color: #F5F5F5;
+	text-align: center;
+	height: 100px;
+}
+.products_more-link{
+	text-decoration: none;
+	color: #8E8E8E;
+	font-size: 12px;
+	line-height: 100px;
+	transition: color 0.4s;
+	
+	&:hover{
+		text-decoration: underline;
+		color: darken(#8E8E8E, 20%);
+	}
+}

@@ -1,0 +1,36 @@
+// main: ../style.less
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.btn{
+	background-color: #10C9C3;
+	padding: 20px 44px;
+	color: #fff;
+	border: none;
+	transition: background-color 0.3s;
+	border-radius: 10px;
+	
+	&:hover{
+		background-color: darken(#10C9C3, 20%);
+		cursor: pointer;
+	}
+	&:focus{
+		outline: none;
+	}
+}
+.icon{
+	font-size: 30px;
+	color: #696060;
+	margin-bottom: 13.5px;
+}
+
+
+
+@media screen and (max-width:  768px){
+	.btn--top{
+		float: right;
+	}
+}

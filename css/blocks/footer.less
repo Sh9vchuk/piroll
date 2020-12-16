@@ -1,0 +1,39 @@
+// main: ../style.less
+
+
+.footer{
+	background-color: #141414;
+	padding: 100px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.footer-item{
+	display: flex;
+	flex-flow: column wrap;
+	font-family: 'Montserrat', sans-serif;
+	color: #BCBCBC;
+}
+.footer-item__h2{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.footer-item a{
+	text-decoration: none;
+	color: inherit;
+	line-height: 24px;
+	
+	
+	&:hover{
+		text-decoration: underline;
+		color: #fff;
+	}
+}
+
+
+@media screen and (max-width:  990px){
+	.footer{
+		font-size: 12px;
+		padding: 50px;
+	}
+}
